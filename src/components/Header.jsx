@@ -1,8 +1,8 @@
-function Header({ title, subtitle }) {
+function Header({ eyebrow, title, subtitle }) {
   return (
     <header className="site-header">
       <div className="header-content">
-        <p className="eyebrow">React Project 3</p>
+        <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
         <p className="header-subtitle">{subtitle}</p>
       </div>

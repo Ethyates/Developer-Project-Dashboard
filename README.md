@@ -1,41 +1,69 @@
-# Developer Project Dashboard
+# Developer Project Dashboard - Interactive Dashboard
 
-Developer Project Dashboard is a component-based React application built with Vite. It displays a collection of development projects using reusable React components and props.
+## Overview
 
-## Project Requirements Demonstrated
+Developer Project Dashboard is a React application built with Vite that demonstrates component-based design while adding interactivity through React state, events, and conditional rendering.
 
-- Vite React project
-- More than five separate React components
-- Reusable components that use props
-- `ProjectCard` reused six times with different project data
-- Custom CSS styling
-- Organized component and data folders
-- Responsive dashboard layout
+The dashboard displays a collection of development projects and allows users to search, filter, update project status, and control what information is displayed.
 
-## Components
+## Features
 
-- `App`
-- `Header`
-- `DashboardSummary`
-- `ProjectList`
-- `ProjectCard`
-- `Footer`
+- Component-based React architecture
+- Reusable ProjectCard component using props
+- Search projects by name
+- Filter projects by category
+- Toggle project descriptions
+- Update project status
+- Reset dashboard filters
+- Responsive custom CSS styling
 
-## Run the Project
+## Technologies
+
+- React
+- Vite
+- JavaScript (ES6+)
+- JSX
+- CSS3
+
+## React Concepts Demonstrated
+
+- Components
+- JSX
+- Props
+- useState
+- Event Handling
+- Conditional Rendering
+
+## Installation
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local address shown in the terminal after Vite starts.
-
-## Build Test
+## Production Build
 
 ```bash
 npm run build
 ```
 
-## Course
+## Preview Production Build
 
-ITT-072 React Project 3
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+├── data/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Author
+
+Ethan

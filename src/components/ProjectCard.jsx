@@ -1,9 +1,12 @@
 function ProjectCard({
+  id,
   title,
   category,
   status,
   description,
   technologies,
+  showDescription,
+  onStatusToggle,
 }) {
   return (
     <article className="project-card">
@@ -15,7 +18,10 @@ function ProjectCard({
       </div>
 
       <h3>{title}</h3>
-      <p className="project-description">{description}</p>
+
+      {showDescription && (
+        <p className="project-description">{description}</p>
+      )}
 
       <div className="technology-list" aria-label={`Technologies used for ${title}`}>
         {technologies.map((technology) => (
@@ -24,6 +30,14 @@ function ProjectCard({
           </span>
         ))}
       </div>
+
+      <button
+        className="status-button"
+        type="button"
+        onClick={() => onStatusToggle(id)}
+      >
+        Mark as {status === "Completed" ? "In Progress" : "Completed"}
+      </button>
     </article>
   );
 }
